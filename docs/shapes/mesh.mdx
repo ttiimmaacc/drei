@@ -2,11 +2,15 @@
 title: Mesh
 ---
 
+To use the Mesh or shape helpers like Plane, Box, and Sphere, you’ll need to import them from @react-three/drei:
+```jsx 
+import { Box, Plane, Sphere } from '@react-three/drei';
+```
 Short-cuts for a [mesh](https://threejs.org/docs/#api/en/objects/Mesh) with a [buffer geometry](https://threejs.org/docs/#api/en/core/BufferGeometry).
 
 ```jsx
 <Box
-  args={[1, 1, 1]}                // Args for the buffer geometry
+  args={[1, 1, 1]}                // Arguments for the Box buffer geometry (width, height, depth)
   {...meshProps}                  // All THREE.Mesh props are valid
 />
 
